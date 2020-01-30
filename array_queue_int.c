@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-//栈是先进先出的(First in First out, FIFO)
+// 队伍是先进先出的(First in First out, FIFO)
+// 栈是先进后出(First in Last out, FiLO)
 
 typedef char* String;
 
