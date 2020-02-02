@@ -277,14 +277,14 @@ List *MergeSortedList(List *list_a, List *list_b)
     }
     node_c = list_c->head;
     while( true ){
+        if  (node_a == NULL || node_b == NULL ) break;
+
         if (node_a->data < node_b->data){
             node_c->next = node_a;
             node_a = node_a->next;
-            if  (node_a == NULL) break;
         } else{
             node_c->next = node_b;
             node_b = node_b->next;
-            if  (node_b == NULL) break;
         }
             node_c = node_c->next;
     }
